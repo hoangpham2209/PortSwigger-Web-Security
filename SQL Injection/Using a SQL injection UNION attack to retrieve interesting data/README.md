@@ -10,13 +10,13 @@ The database contains a different table called users, with columns called userna
 
 ## Solution
 
-First, I choose any type of category.
+First, we choose any type of category.
 
-Now, I try to modify the link to determine the number of columns required.
+Now, we try to modify the link to determine the number of columns required.
 
-After I try, I can see `' ORDER BY 3--` display error. That means it has 2 columns.
+After we try, we can see `' ORDER BY 3--` display error. That means it has 2 columns.
 
-Now I determine which column is string data: `' UNION SELECT NULL,'a'--`
+Now we determine which column is string data: `' UNION SELECT NULL,'a'--`
 
 Now exploit the payload: `' UNION SELECT NULL, username || '~' || password FROM users--`
 
