@@ -17,4 +17,4 @@ After I try, I can see `' ORDER BY 4--` display error. That means it has 3 colum
 
 `https://0a7500830322a6b781704d6000b40045.web-security-academy.net/filter?category=Pets'+UNION+SELECT+NULL,NULL,NULL--`
 
-**Source:** ![Determining the number of columns required](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-determining-the-number-of-columns-required/sql-injection/union-attacks/lab-determine-number-of-columns)
+**Source:** [Lab: Determining the number of columns required](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-determining-the-number-of-columns-required/sql-injection/union-attacks/lab-determine-number-of-columns)
