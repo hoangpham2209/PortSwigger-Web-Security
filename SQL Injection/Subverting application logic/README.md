@@ -4,7 +4,7 @@
 
 This lab contains a SQL injection vulnerability in the login function.
 
-**End gold:** Log in as `administrator` user.
+**End goal:** Log in as `administrator` user.
 
 ## Solution
 
