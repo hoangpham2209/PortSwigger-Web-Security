@@ -8,15 +8,15 @@ This lab contains a SQL injection vulnerability in the product category filter. 
 
 ## Solution
 
-First, I choose any type of category.
+First, we choose any type of category.
 
 Then turn on Proxy and open Burp Suite, send your site to Repeater.
 
-Now, I try to modify the link to determine the number of columns required.
+Now, we try to modify the link to determine the number of columns required.
 
-After I try, I can see `' ORDER BY 3#` display error. That means it has 2 columns.
+After we try, we can see `' ORDER BY 3#` display error. That means it has 2 columns.
 
-Now I determine which column is string data: `' UNION SELECT 'a','a'#`
+Now we determine which column is string data: `' UNION SELECT 'a','a'#`
 
 So both columns are string. Expoilt payload: `' UNION SELECT 'a',@@version#`
 
@@ -34,9 +34,9 @@ The application has a login function, and the database contains a table that hol
 
 ## Solution
 
-After I determine, I can see `' ORDER BY 3#` display error. That means it has 2 string columns.
+After we determine, we can see `' ORDER BY 3#` display error. That means it has 2 string columns.
 
-Now I look for name of database table, Most database types have a set of views called the information schema: `' UNION SELECT table_name,NULL FROM information_schema.tables`
+Now we look for name of database table, Most database types have a set of views called the information schema: `' UNION SELECT table_name,NULL FROM information_schema.tables`
 
 We have lots of names here, now we search for `user` to see anything interesting. In my case, I see `users_zymndv`
 
