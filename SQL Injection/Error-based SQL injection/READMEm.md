@@ -16,7 +16,7 @@ Use Burp Suite to intercept and modify `TrackingId` cookie.
 
 First, we need to see the behavior after modify cookie. Go to login page
 
-![]()
+![](../img/2.png)
 
 Here is my cookie: `ZDhTYBxTuioKS1t5`. We have hint: `This lab uses an Oracle database.`
 
@@ -44,9 +44,9 @@ After that, we will discover character-by-character for the password.
 
 ![]()
 
-![]()
+![](../img/1.png)
 
-After half hour, I got this:
+After an hour, I got this:
 
 `Username: administrator`
 
