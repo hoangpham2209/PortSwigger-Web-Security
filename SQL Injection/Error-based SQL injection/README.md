@@ -10,6 +10,10 @@ The database contains a different table called users, with columns called userna
 
 **End goal:** log in as the `administrator` user.
 
+We have hint: `This lab uses an Oracle database.`
+
+Oracle's syntax: [SQL Cheatsheat](https://portswigger.net/web-security/sql-injection/cheat-sheet)
+
 ## Solution
 
 Use Burp Suite to intercept and modify `TrackingId` cookie.
@@ -18,7 +22,7 @@ First, we need to see the behavior after modify cookie. Go to login page
 
 ![](img/2.png)
 
-Here is my cookie: `ZDhTYBxTuioKS1t5`. We have hint: `This lab uses an Oracle database.`
+Here is my cookie: `ZDhTYBxTuioKS1t5`. 
 
 Send this to Repeater. 
 
