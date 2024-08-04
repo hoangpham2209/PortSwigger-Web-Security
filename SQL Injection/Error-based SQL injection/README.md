@@ -55,3 +55,19 @@ After an hour, I got this:
 `Password:x555lejj395mk0k98nja`
 
 **Source:** [Lab: Blind SQL injection with conditional errors](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-conditional-errors#)
+
+---
+
+# Visible error-based SQL injection
+
+## Lab's decsription
+
+This lab contains a SQL injection vulnerability. The application uses a tracking cookie for analytics, and performs a SQL query containing the value of the submitted cookie. The results of the SQL query are not returned.
+
+The database contains a different table called users, with columns called username and password.
+
+**End goal:** log in as the `administrator` user.
+
+## Solution
+
+**Source:** [Lab: Visible error-based SQL injection](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-sql-injection-visible-error-based#)
