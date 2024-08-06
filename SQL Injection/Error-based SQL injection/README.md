@@ -70,4 +70,11 @@ The database contains a different table called users, with columns called userna
 
 ## Solution
 
+Use Burp Suite to intercept and modify `TrackingId` cookie.
+
+First, we need to see the behavior after modify cookie. Go to login page
+
+Here is my cookie: `b2enCQjhRAqpl6Zl`.
+
+
 **Source:** [Lab: Visible error-based SQL injection](https://portswigger.net/web-security/learning-paths/sql-injection/sql-injection-error-based-sql-injection/sql-injection/blind/lab-sql-injection-visible-error-based#)
