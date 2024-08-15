@@ -70,6 +70,8 @@ This lab is vulnerable to username enumeration using its response times. To solv
 First, input any username and a long password (longer 100 characters)
 ![](img/7.png)
 
+In this lab, if we try so many time, it will response `Try many time. Please try again after 30 minutes`. So to bypass this, we need to add `X-Forwarded-For: [numb]` with [numb] from range 1 to 100 to change to different IP.
+
 We will see the username with the `Response received` time different.
 ![](img/8.png)
 
