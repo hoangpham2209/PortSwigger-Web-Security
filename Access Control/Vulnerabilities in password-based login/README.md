@@ -5,6 +5,7 @@
 This lab is vulnerable to username enumeration and password brute-force attacks. It has an account with a predictable username and password, which can be found in the following wordlists
 
 [Authentication lab usernames](https://portswigger.net/web-security/authentication/auth-lab-usernames)
+
 [Authentication lab passwords](https://portswigger.net/web-security/authentication/auth-lab-passwords)
 
 **End goal:** enumerate a valid username, brute-force this user's password, then access their account page
@@ -37,6 +38,7 @@ Now we need to find the correct password for `ads`, add `§` for password's inpu
 This lab is subtly vulnerable to username enumeration and password brute-force attacks. It has an account with a predictable username and password, which can be found in the following wordlists:
 
 [Authentication lab usernames](https://portswigger.net/web-security/authentication/auth-lab-usernames)
+
 [Authentication lab passwords](https://portswigger.net/web-security/authentication/auth-lab-passwords)
 
 **End goal:** enumerate a valid username, brute-force this user's password, then access their account page.
