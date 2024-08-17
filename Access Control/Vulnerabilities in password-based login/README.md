@@ -79,3 +79,42 @@ We will see the username with the `Response received` time different.
 
 **Reference:** [Lab: Username enumeration via response timing](https://portswigger.net/web-security/learning-paths/authentication-vulnerabilities/password-based-vulnerabilities/authentication/password-based/lab-username-enumeration-via-response-timing)
 
+# Lab: Broken brute-force protection, IP block
+
+## Lab's description
+
+This lab is vulnerable due to a logic flaw in its password brute-force protection.
+
+Your credentials: wiener:peter
+Victim's username: carlos
+
+**End goal:** brute-force the victim's password, then log in and access their account page.
+
+## Solution
+
+In this lab, the counter for the number of failed attempts resets if the IP owner logs in successfull.
+
+So to avoid IP blocking, we should interleave our username and victim's username and so on for the password.
+
+![](img/9.png)
+![](img/10.png)
+![](img/11.png)
+
+**Reference:** [Lab: Broken brute-force protection, IP block](https://portswigger.net/web-security/learning-paths/authentication-vulnerabilities/password-based-vulnerabilities/authentication/password-based/lab-broken-bruteforce-protection-ip-block#)
+
+# Lab: Username enumeration via account lock
+
+## Solution
+
+Set `Attack type` to `Cluster bomb`. First payload for username is a list of username, then second payload is `null` and generate it 5 times.
+
+`username=§abc§&password=abc§§`
+
+After attacking, we will see one of them have the different in lengthy. Because it responses `You have made too many incorrect login attempts.`
+
+![](img/12.png)
+
+Now take that username, set `Attack type` to `Sniper` and add the list of passwords to the payload, set grep extract for error message.
+
+**Reference:** [Lab: Username enumeration via account lock](https://portswigger.net/web-security/learning-paths/authentication-vulnerabilities/password-based-vulnerabilities/authentication/password-based/lab-username-enumeration-via-account-lock)
+
