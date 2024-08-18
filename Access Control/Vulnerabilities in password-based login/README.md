@@ -116,5 +116,7 @@ After attacking, we will see one of them have the different in lengthy. Because 
 
 Now take that username, set `Attack type` to `Sniper` and add the list of passwords to the payload, set grep extract for error message.
 
+![](img/13.png)
+
 **Reference:** [Lab: Username enumeration via account lock](https://portswigger.net/web-security/learning-paths/authentication-vulnerabilities/password-based-vulnerabilities/authentication/password-based/lab-username-enumeration-via-account-lock)
 
