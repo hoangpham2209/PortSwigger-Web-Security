@@ -13,7 +13,7 @@ Login as Wiener. We will see the `stay-logged-in` cookie.
 
 Send this to `Intruder` and set the payload like this:
 
-![](ing/2.png)
+![](img/2.png)
 
 Go to `Settings` and `grep-match` the string `Update` and run attack 
 
