@@ -19,4 +19,4 @@ Go to `Settings` and `grep-match` the string `Update` and run attack
 
 Filter the `Update` column and we will see the result.
 
-##Reference:** [Lab: Brute-forcing a stay-logged-in cookie](https://portswigger.net/web-security/learning-paths/authentication-vulnerabilities/vulnerabilities-in-other-authentication-mechanisms/authentication/other-mechanisms/lab-brute-forcing-a-stay-logged-in-cookie)
+**Reference:** [Lab: Brute-forcing a stay-logged-in cookie](https://portswigger.net/web-security/learning-paths/authentication-vulnerabilities/vulnerabilities-in-other-authentication-mechanisms/authentication/other-mechanisms/lab-brute-forcing-a-stay-logged-in-cookie)
